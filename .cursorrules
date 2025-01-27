@@ -1,0 +1,60 @@
+Temel Prensipler
+* Tüm kod ve dökümantasyon için İngilizce kullan.
+* Bir fonksiyon içinde boş satır bırakma.
+İsimlendirme
+* Sınıflar için PascalCase kullan.
+* Değişkenler, fonksiyonlar ve metotlar için camelCase kullan.
+* Dosya ve dizin adlarında underscores_case kullan.
+* Çevre değişkenleri için UPPERCASE kullan.
+* Her fonksiyona bir fiil ile başla.
+* Boolean değişkenler için fiil kullan. Örneğin: isLoading, hasError, canDelete vb.
+* Kısaltmalardan kaçın ve tam kelimeler kullan.
+    * Standart kısaltmalar dışında (API, URL vb.).
+    * Yaygın kullanılan kısaltmalar hariç:
+        * Döngülerde i, j
+        * Hatalar için err
+        * Context için ctx
+        * Middleware fonksiyon parametreleri için req, res, next
+Fonksiyonlar
+* Fonksiyonlar kısa ve tek bir amaca hizmet etmeli. 20 satırdan kısa olmalı.
+* Fonksiyonları fiil + başka bir şeyle adlandır.
+    * Boolean döndürenler için: isX, hasX, canX vb.
+    * Hiçbir şey döndürmeyenler için: executeX, saveX vb.
+* Blok iç içe geçmelerinden kaçın:
+    * Erken kontroller ve dönüşlerle (return).
+    * Yardımcı fonksiyonlara çıkarım yaparak.
+* Higher-order fonksiyonlar kullan (map, filter, reduce vb.) ve iç içe fonksiyonlardan kaçın.
+    * Basit fonksiyonlar için (3 satırdan kısa) arrow functions kullan.
+    * Karmaşık fonksiyonlar için adlandırılmış fonksiyonlar kullan.
+* Null veya undefined kontrolü yerine varsayılan parametre değerleri kullan.
+* Fonksiyon parametrelerini azaltmak için RO-RO prensibini uygula:
+    * Birden fazla parametre geçirmek için bir obje kullan.
+    * Sonuçları döndürmek için bir obje kullan.
+    * Girdi ve çıktılar için gerekli türleri tanımla.
+* Tek bir soyutlama seviyesi kullan.
+Veri
+* Data için data class kullan.
+* Primitive türleri aşırı kullanmaktan kaçın, veriyi birleştirilmiş türlerde kapsülle.
+* Fonksiyonlarda veri doğrulamasından kaçın, bunun yerine dahili doğrulama yapan sınıflar kullan.
+* Sabit veriler için val kullan.
+Sınıflar
+* SOLID prensiplerini takip et.
+* Tek bir amaca hizmet eden küçük sınıflar yaz.
+    * 200 satırdan az.
+    * 10’dan az public metot.
+    * 10’dan az özellik.
+Hatalar
+* Beklenmeyen hataları yönetmek için exceptions kullan.
+* Eğer bir exception yakalarsan (catch), şu amaçlarla kullanılmalı:
+    * Beklenen bir problemi çözmek.
+    * Bağlam eklemek.
+    * Aksi durumda global bir handler kullan.
+
+Temel Prensipler
+* Clean architecture kullan.
+* MVVM mimarisini kullan.
+* Jetpack Compose kullan. 
+* Flow gibi Kotlin Coroutinelerini kullan.
+* Room database kullan
+* Paging 3 kütüphanesi kullan.
+* Dependency Injection(Hilt) kullan.
