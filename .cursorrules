@@ -58,3 +58,4 @@ Temel Prensipler
 * Room database kullan
 * Paging 3 kütüphanesi kullan.
 * Dependency Injection(Hilt) kullan.
+* Bütün textler için quicksand isimli font'u kullan.

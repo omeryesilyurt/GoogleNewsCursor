@@ -67,9 +67,16 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // Hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-compiler:2.44")
+    implementation("com.google.dagger:hilt-android:2.49")
+    kapt("com.google.dagger:hilt-compiler:2.49")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     
     // Navigation
     implementation("androidx.navigation:navigation-compose:2.7.7")
